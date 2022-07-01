@@ -253,9 +253,9 @@ if [[ ${SETUP} || ${SETUP_USER} ]]; then
   echo "Copying ${DOTFILES} from Github"
   if [[ ! -d ${PERSONAL_GITREPOS}/${DOTFILES} ]]; then
     cd ${HOME} || return
-    git clone --recursive git@github.com:brujack/${DOTFILES}.git ${PERSONAL_GITREPOS}/${DOTFILES}
+    git clone --recursive git@github.com:tanzeelrana/${DOTFILES}.git ${PERSONAL_GITREPOS}/${DOTFILES}
     # for regular https github used on machines that will not push changes
-    # git clone --recursive https://github.com/brujack/${DOTFILES}.git ${PERSONAL_GITREPOS}/${DOTFILES}
+    # git clone --recursive https://github.com/tanzeelrana/${DOTFILES}.git ${PERSONAL_GITREPOS}/${DOTFILES}
   else
     cd ${PERSONAL_GITREPOS}/${DOTFILES} || return
     git pull
